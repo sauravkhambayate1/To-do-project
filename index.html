@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body bgcolor="black">
+    <div>
+       
+        <div id="main">
+    <div class="tasklist">
+        <span class="tasks">Tasks</span>
+        <span class="list">List</span> 
+    </div>
+
+    <div class="fa-add">
+        <div class="fa fa-plus-circle" style="font-size:36px; color: blue;" id="fa-plus"></div>
+      <div class="add-items">Add items</div>
+    </div> 
+        </div>
+    <div id="pop-up">
+        <div class="add-items-list">Add New List</div>
+       <center><input type="text" id="input-text" placeholder="Add New List" style="text-align: center; margin-top: 20px; padding: 10px; border-radius: 8px; width: 250px;"></center>
+       <button id="add-btn" onclick="add()">Add</button>
+       <button id="close-btn" onclick="close()">Close</button>
+    </div>
+
+
+    <!-- <div id="flex-container">
+      <div class="flex-box">1</div> 
+      <div class="flex-box">2</div>
+      <div class="flex-box">3</div>
+      <div class="flex-box">4</div>
+      <div class="flex-box">5</div>
+      <div class="flex-box">6</div>
+
+
+    </div> -->
+    <div id="lists-div"></div>
+   
+    <div id="pop-up2">
+        <div class="add-items-list">Add New Item</div>
+       <center><input type="text" id="input-text-2" placeholder="Add New Item" style="text-align: center; margin-top: 20px; padding: 10px; border-radius: 8px; width: 250px;"></center>
+       <button id="add-btn2">Add</button>
+       <button id="close-btn2" onclick="close()">Close</button>
+       <ul id="myUL"></ul>
+       <!-- <span onclick="newElement()" class="addBtn">Add</span> -->
+    </div>
+    
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

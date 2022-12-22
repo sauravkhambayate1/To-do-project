@@ -1,0 +1,151 @@
+.tasks{
+    font-size: 65px; 
+    font-weight: bolder; 
+    color: aliceblue;
+    margin-left: 50px;
+    
+}
+.list{
+    font-size: 65px; 
+    color: aliceblue;
+    /* margin-left: 10px; */
+}
+.tasklist{
+    margin-top: 70px;
+    margin-left: 90px;
+}
+
+.add-items{
+    color: aliceblue;
+    font-size: 30px;
+    margin-left: 1200px;
+    margin-top: -60px;
+}
+.fa-plus-circle{
+    margin-left: 1150px;
+   position: relative;
+   top: -25px;
+   display: inline-block;
+}
+
+.fa-add{
+    margin-top: -20px;
+}
+
+#pop-up, #pop-up2{
+    background-color: white;
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    margin: auto;
+    /* margin-top: 80px; */
+    display: none;
+    position: absolute;
+    left: 35%;
+    top: 30%;
+    
+}
+/* #pop-up2{
+    background-color: white;
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 80px;
+    display: none;
+} */
+.add-items-list{
+     text-align: center;
+     font-size: 25px;
+     color: red;
+     font-weight: bold;
+     padding-top: 15px;
+}
+#add-btn, #add-btn2{
+    background-color: red;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    margin: 20px;
+    margin-left: 30px;
+}
+#close-btn, #close-btn2{
+    background-color: red;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    margin-left: 70px;
+}
+
+#flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  margin-left:155px ;
+}
+
+/* .flex-box{
+    background-color: aliceblue;
+    width: 17%;
+    height: 300px;
+    margin: 30px;
+    border-radius: 10px;
+
+} */
+
+#lists-div{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    margin-left: 35px;
+    z-index: -1;
+}
+
+#item-1{
+    background-color: aliceblue;
+    width: 17%;
+    height: 350px;
+    border-radius: 15px;
+    margin: 50px;
+    
+}
+
+/* #para-list{
+    color: red;
+} */
+
+#adding-item{
+    /* text-align: center; */
+    color: red;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#deleting-icon{
+      color: white;
+      background-color: red;
+      width: 35px;
+      height: 35px;
+      border-radius: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      margin-left: 200px;
+      margin-top: 230px;
+}
+
+#delete-add{
+    margin-top: -25px;
+}
+
+#adding-icon{
+    margin-left: 160px;
+    margin-top: -12px;
+    color: blue;
+    font-size: 40px;
+}
