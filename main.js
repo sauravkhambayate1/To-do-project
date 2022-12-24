@@ -9,10 +9,10 @@ function myfunction(){
 document.getElementById("close-btn").addEventListener('click', close)
 function close(){
     document.getElementById("pop-up").style.display = "none";
-    document.getElementById('main').style.filter = "none"
+    document.getElementById('main').style.filter = "none";
 }
 
-document.getElementById("add-btn").addEventListener('click' , add)
+//document.getElementById("add-btn").addEventListener('click' , add)
 // let arr=[]
 function add(){
     document.getElementById("pop-up").style.display = "none";
@@ -27,11 +27,11 @@ function add(){
 
    var creatediv = document.createElement('div')
    creatediv.setAttribute("id", 'para-list')
-console.log(creatediv)
+  console.log(creatediv)
    var heading = document.createElement('h1')
    var node = document.createTextNode(`${input1}`);
 //    heading.style.textAlign= "center"
-  console.log(node);
+  console.log(node);  
    heading.appendChild(node)
    heading.setAttribute("id",'adding-item')
 
@@ -84,37 +84,65 @@ console.log(creatediv)
     document.getElementById('main').style.filter = "blur(6px)"
     
    }
+
+   document.getElementById('add-btn2').addEventListener('click', function addpara() {
+    document.getElementById('pop-up2').style.display = "none"
+    document.getElementById('main').style.filter = "blur(0px)"
+    
+    
+   
+    
+        var li = document.createElement("li");
+        var inputValue = document.getElementById("input-text-2").value;
+        
+       
+       
+        // console.log(`${inputValue}`);
+        var t = document.createTextNode(`${inputValue}`);
+        // console.log(`${t}`);
+        li.appendChild(t);
+      
+        if (inputValue === '') {
+          alert("You must write something!!");
+        } else {
+          document.getElementById("myUL").appendChild(li)
+        }
+        // console.log( unorderedList);
+        // createitem1.appendChild( unorderedList)
+           
+        var NodeList = document.getElementsByTagName('li');
+        var i;
+        for(i=0; i<NodeList.length; i++)
+        {
+          var span = document.createElement('span')
+          var text = document.createTextNode("\u00D7")
+          span.className = "remove";
+          span.appendChild(text);
+          NodeList[i].appendChild(span);
+        }
+
+
+        var remove = document.getElementsByClassName("remove");
+        var i;
+        for (i = 0; i < remove.length; i++) {
+        remove[i].onclick = function() {
+        var div = this.parentElement;
+        div.style.display = "none";
+  }
+}
+
+      
+})
     
 
 
 }
 
 
-document.getElementById('add-btn2').addEventListener('click', function addpara() {
-    document.getElementById('pop-up2').style.display = "none"
-    document.getElementById('main').style.filter = "blur(0px)"
+
     
-    
-    var createitem1 = document.createElement('div')
-    createitem1.setAttribute("id", 'item-2')
-    
-        var li = document.createElement("li");
-        var inputValue = document.getElementById("input-text-2").value;
-        // console.log(`${inputValue}`);
-        var t = document.createTextNode(`${inputValue}`);
-        // console.log(`${t}`);
-        li.appendChild(t);
-        if (inputValue === '') {
-          alert("You must write something!");
-        } else {
-          document.getElementById("myUL").appendChild(li);
-        }
-        // document.getElementById("item-1").appendChild(myUL);
-        createitem1.appendChild(myUL)
-      
-})
-    document.getElementById("close-btn2").addEventListener('click', close)
-    function close(){
+
+function close(){
     document.getElementById("pop-up2").style.display = "none";
     document.getElementById('main').style.filter = "none"
    

@@ -100,7 +100,7 @@
     flex-wrap: wrap;
     /* justify-content: space-evenly; */
     margin-left: 35px;
-    z-index: -1;
+   
 }
 
 #item-1{
@@ -148,4 +148,26 @@
     margin-top: -12px;
     color: blue;
     font-size: 40px;
+}
+
+#myUL{
+    position: relative;
+    bottom: 300px;
+    left: 100px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+
+    
+}
+.remove{
+    position: absolute;
+    left: 180px ;
+   width: 30px;
+   padding-left: 12px;
+}
+.remove:hover {
+    background-color: grey;
+    color: white;
+    font-size: 25px;
 }
